@@ -10,13 +10,13 @@ export default function ContactButtons() {
          
           
           <a 
-            href="https://t.me/Hossammirah" 
+            href="https://wa.me/201003533090" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 px-6 py-4 bg-blue-600/20 hover:bg-blue-600/30 rounded-xl text-blue-400 transition-all w-full group"
+            className="flex items-center justify-center gap-3 px-6 py-4 bg-green-600/20 hover:bg-green-600/30 rounded-xl text-green-400 transition-all w-full group"
           >
-            <FaTelegram className="text-2xl group-hover:scale-110 transition-transform" />
-            <span className="font-medium">تواصل عبر تليجرام</span>
+            <FaWhatsapp className="text-2xl group-hover:scale-110 transition-transform" />
+            <span className="font-medium">تواصل عبر الواتساب</span>
           </a>
         </div>
       </div>

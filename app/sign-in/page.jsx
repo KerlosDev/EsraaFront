@@ -1,8 +1,9 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { IoMdCalculator } from "react-icons/io";
-import { PiMathOperations, PiFunction } from "react-icons/pi";
-import { FaSquareRootAlt, FaEnvelope, FaLock } from "react-icons/fa";
+import { GiAtom } from "react-icons/gi";
+import { TbAtom2, TbMathIntegral } from "react-icons/tb";
+import { FaAtom, FaEnvelope, FaLock, FaBolt } from "react-icons/fa";
+import { IoFlash } from "react-icons/io5";
 import Cookies from "js-cookie";
 import { useRouter } from 'next/navigation';
 import sessionManager from '../utils/sessionManager';
@@ -128,13 +129,13 @@ const SignInPage = () => {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute inset-0 opacity-5 mix-blend-overlay"></div>
                 <div className="absolute top-20 left-20 text-white/10 text-7xl animate-float">
-                    <FaSquareRootAlt />
+                    <FaAtom />
                 </div>
                 <div className="absolute bottom-40 right-20 text-white/10 text-8xl animate-spin-slow">
-                    <PiMathOperations />
+                    <TbAtom2 />
                 </div>
                 <div className="absolute top-1/2 left-1/3 text-white/10 text-6xl animate-bounce-slow">
-                    <PiFunction />
+                    <TbMathIntegral />
                 </div>
                 {/* Gradient orbs */}
                 <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse"></div>
@@ -147,34 +148,34 @@ const SignInPage = () => {
                     <div className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-2xl
                          bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 
                          transform hover:scale-105 transition-all duration-500">
-                        <IoMdCalculator className="text-3xl text-blue-300" />
-                        <span className="font-arabicUI2 text-xl text-blue-300">منصة حسام ميرة</span>
+                        <GiAtom className="text-3xl text-blue-300" />
+                        <span className="font-arabicUI2 text-xl text-blue-300">منصة إسراء البيلي</span>
                     </div>
 
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-arabicUI2 font-bold text-white leading-tight">
                         مرحباً بعودتك إلى
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">
-                            عالم الرياضيات الممتع
+                            عالم الفيزياء الممتع
                         </span>
                     </h1>
 
                     <p className="text-base sm:text-lg lg:text-xl font-arabicUI2 text-white/80 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        سجل دخولك الآن واستكمل رحلتك في تعلم الرياضيات بطريقة مختلفة ومبتكرة
+                        سجل دخولك الآن واستكمل رحلتك في تعلم الفيزياء بطريقة مختلفة ومبتكرة
                         <span className="text-blue-300"> مع أفضل المدرسين </span>
-                        وأحدث طرق شرح المفاهيم الرياضية ❤️
+                        وأحدث طرق شرح المفاهيم الفيزيائية ❤️
                     </p>
 
                     <div className="flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-end mt-6">
                         <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm p-3 rounded-xl">
-                            <PiMathOperations className="text-purple-300 text-2xl" />
-                            <span className="font-arabicUI2 text-white/90">تمارين تفاعلية</span>
+                            <IoFlash className="text-purple-300 text-2xl" />
+                            <span className="font-arabicUI2 text-white/90">تجارب تفاعلية</span>
                         </div>
                         <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm p-3 rounded-xl">
-                            <FaSquareRootAlt className="text-blue-300 text-2xl" />
+                            <FaAtom className="text-blue-300 text-2xl" />
                             <span className="font-arabicUI2 text-white/90">شرح مبسط</span>
                         </div>
                         <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm p-3 rounded-xl">
-                            <PiFunction className="text-teal-300 text-2xl" />
+                            <FaBolt className="text-teal-300 text-2xl" />
                             <span className="font-arabicUI2 text-white/90">حلول نموذجية</span>
                         </div>
                     </div>
@@ -186,7 +187,7 @@ const SignInPage = () => {
                         <div className="mb-6 text-center">
                             <div className="flex justify-center mb-3">
                                 <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-purple-500">
-                                    <IoMdCalculator className="text-3xl text-white" />
+                                    <GiAtom className="text-3xl text-white" />
                                 </div>
                             </div>
                             <h2 className="text-2xl font-arabicUI2 font-bold text-white mb-2">تسجيل الدخول</h2>

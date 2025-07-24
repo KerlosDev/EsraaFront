@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { FaLightbulb, FaStar, FaGraduationCap, FaUsers, FaTrophy, FaPlay } from "react-icons/fa";
 import { GiTakeMyMoney } from "react-icons/gi";
-import { FaCalculator, FaSquareRootAlt, FaInfinity, FaChartLine, FaPrint, FaQuoteLeft, FaAward } from "react-icons/fa";
-import { MdFunctions, MdVideoLibrary, MdSchool } from "react-icons/md";
-import { TbMathSymbols, TbMathIntegral, TbCertificate } from "react-icons/tb";
+import { FaAtom, FaBolt, FaInfinity, FaChartLine, FaPrint, FaQuoteLeft, FaAward } from "react-icons/fa";
+import { MdScience, MdVideoLibrary, MdSchool } from "react-icons/md";
+import { TbAtom, TbBulb, TbCertificate } from "react-icons/tb";
 import { BsCheckCircleFill } from "react-icons/bs";
 import Link from 'next/link';
 import styles from './Hero.module.css';
@@ -19,7 +19,7 @@ const Hero = () => {
                 </div>
                 <div className="absolute top-40 left-20 w-48 h-48 bg-red-500/10 backdrop-blur-3xl rounded-full 
                               flex items-center justify-center animate-float-delayed">
-                    <FaSquareRootAlt className="text-7xl text-red-500/50 animate-bounce" />
+                    <FaAtom className="text-7xl text-red-500/50 animate-bounce" />
                 </div>
                 {/* New decorative elements */}
                 <div className="absolute bottom-20 right-1/4 w-32 h-32 bg-yellow-500/10 backdrop-blur-3xl rounded-full 
@@ -40,7 +40,7 @@ const Hero = () => {
                                 className="relative z-10 w-full h-[500px] sm:h-auto max-w-lg mx-auto 
                                          object-contain sm:object-cover drop-shadow-2xl 
                                          hover:scale-102 transition-transform duration-300"
-                                alt="Hossam Image"
+                                alt="Esraa Image"
                             />
                         </div>
                     </div>
@@ -65,10 +65,10 @@ const Hero = () => {
                                         <div className="w-12 h-12 bg-gradient-to-br from-blue-500/30 to-purple-500/30 
                                                       rounded-full flex items-center justify-center group-hover:scale-110 
                                                       transition-transform duration-300">
-                                            <FaCalculator className="text-2xl text-blue-600 animate-spin-slow" />
+                                            <FaBolt className="text-2xl text-blue-600 animate-spin-slow" />
                                         </div>
                                         <h1 className={styles.teacherName}>
-                                            حسام ميرة
+                                             إسراء البيلي
                                         </h1>                                        <div className="hidden sm:flex w-12 h-12 bg-gradient-to-br from-yellow-500/30 to-red-500/30 
                                                       rounded-full items-center justify-center group-hover:scale-110 
                                                       transition-transform duration-300">
@@ -94,7 +94,7 @@ const Hero = () => {
                                         <FaTrophy className="text-yellow-500 text-lg animate-spin-slow" />
                                         <span className="text-base sm:text-lg font-arabicUI3 
                                                        text-slate-700 dark:text-slate-300">
-                                            مدرس الرياضيات البحتة والتطبيقية بخبرة +5 سنوات                                        </span>
+                                            مدرس الفيزياء بخبرة +5 سنوات                                        </span>
                                     </div>
                                 </div>
 
@@ -140,7 +140,7 @@ const Hero = () => {
                                         <FaChartLine className="text-3xl text-blue-500 animate-pulse" />
                                         <h3 className="text-xl sm:text-2xl lg:text-3xl font-arabicUI3 
                                                      text-slate-600 dark:text-slate-300">
-                                            شرح الرياضيات بالنظام الجديد                                        </h3>
+                                            شرح الفيزياء بالنظام الجديد                                        </h3>
                                         <MdVideoLibrary className="text-3xl text-green-500 animate-bounce" />
                                     </div>
                                 </div>
@@ -153,10 +153,10 @@ const Hero = () => {
                                         <div className="flex flex-col items-center text-center space-y-2">
                                             <div className="w-12 h-12 bg-blue-500/30 rounded-full flex items-center justify-center
                                                           group-hover/item:animate-spin">
-                                                <TbMathIntegral className="text-2xl text-blue-500" />
+                                                <TbAtom className="text-2xl text-blue-500" />
                                             </div>
                                             <span className="text-sm font-arabicUI3 text-blue-700 dark:text-blue-300 font-semibold">
-                                                حلول تفاعلية متقدمة
+                                                تجارب فيزيائية تفاعلية
                                             </span>
 
                                         </div>
@@ -168,7 +168,7 @@ const Hero = () => {
                                         <div className="flex flex-col items-center text-center space-y-2">
                                             <div className="w-12 h-12 bg-red-500/30 rounded-full flex items-center justify-center
                                                           group-hover/item:animate-bounce">
-                                                <MdFunctions className="text-2xl text-red-500" />
+                                                <MdScience className="text-2xl text-red-500" />
                                             </div>
                                             <span className="text-sm font-arabicUI3 text-red-700 dark:text-red-300 font-semibold">
                                                 شرح مبسط وواضح
@@ -184,7 +184,7 @@ const Hero = () => {
                                         <div className="flex flex-col items-center text-center space-y-2">
                                             <div className="w-12 h-12 bg-green-500/30 rounded-full flex items-center justify-center
                                                           group-hover/item:animate-pulse">
-                                                <TbMathSymbols className="text-2xl text-green-500" />
+                                                <TbBulb className="text-2xl text-green-500" />
                                             </div>
                                             <span className="text-sm font-arabicUI3 text-green-700 dark:text-green-300 font-semibold">
                                                 أمثلة متنوعة شاملة

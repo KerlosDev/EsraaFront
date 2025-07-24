@@ -5,7 +5,7 @@ import {
     LogOut, CreditCard, ChevronDown, Mail, Phone, BookOpen,
     Clock, Target, Brain, Beaker, Edit2, Camera, Sun, Moon
 } from 'lucide-react'; 
-import { FaAtom, FaCalculator, FaFlask, FaInfinity, FaMicroscope, FaPlay, FaSquareRootAlt } from "react-icons/fa";
+import { FaAtom, FaCalculator, FaFlask, FaInfinity, FaMicroscope, FaPlay, FaSquareRootAlt, FaBolt, FaMagnet, FaRadiationAlt } from "react-icons/fa";
 import { HiOutlineAcademicCap } from "react-icons/hi";
 import Cookies from 'js-cookie';
 import axios from 'axios';
@@ -309,18 +309,18 @@ export default function ChemistryLMSProfile({ searchParams }) {
         setShowLogoutConfirm(false);
     };
 
-    // Chemistry background component
+    // Physics background component
     const ChemBackground = () => (
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className={`absolute inset-0 opacity-5 mix-blend-overlay ${isDarkMode ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900' : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50'}`}></div>
             <div className={`absolute top-20 left-20 text-7xl ${isDarkMode ? 'text-white/10' : 'text-gray-300/30'}`}>
-                <FaSquareRootAlt className="animate-float" />
+                <FaAtom className="animate-float" />
             </div>
             <div className={`absolute bottom-40 right-20 text-8xl ${isDarkMode ? 'text-white/10' : 'text-gray-300/30'}`}>
-                <FaInfinity className="animate-spin-slow" />
+                <FaBolt className="animate-spin-slow" />
             </div>
             <div className={`absolute top-1/2 left-1/3 text-6xl ${isDarkMode ? 'text-white/10' : 'text-gray-300/30'}`}>
-                <FaCalculator className="animate-bounce-slow" />
+                <FaMagnet className="animate-bounce-slow" />
             </div>
             <div className={`absolute top-1/4 left-1/4 w-96 h-96 ${isDarkMode ? 'bg-blue-500/20' : 'bg-blue-200/40'} rounded-full filter blur-3xl animate-pulse`}></div>
             <div className={`absolute bottom-1/4 right-1/4 w-96 h-96 ${isDarkMode ? 'bg-purple-500/20' : 'bg-purple-200/40'} rounded-full filter blur-3xl animate-pulse-delayed`}></div>

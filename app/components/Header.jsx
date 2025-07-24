@@ -5,9 +5,9 @@ import Image from 'next/image'
 import ThemeToggle from './ThemeToggle'
 import { useRouter } from 'next/navigation'
 import { PiStudentBold } from "react-icons/pi";
-import { TbMathPi } from "react-icons/tb";
-import { TbMathFunction, TbMathSymbols } from "react-icons/tb";
-import { PiMathOperationsBold } from "react-icons/pi";
+import { TbAtom } from "react-icons/tb";
+import { TbBolt, TbMagnet } from "react-icons/tb";
+import { PiLightningBold } from "react-icons/pi";
 import { RiMenu4Fill } from "react-icons/ri";
 import { IoClose, IoNotifications, IoPersonCircle } from "react-icons/io5";
 import NotificationButton from './NotificationButton';
@@ -207,21 +207,21 @@ const Header = () => {
 
     return (<header dir='rtl' className="sticky top-0 z-[100] bg-gradient-to-b from-white/80 to-white/60 dark:from-slate-900/80 dark:to-slate-900/60 
                           backdrop-blur-xl border-b border-blue-500/10 dark:border-blue-500/5">
-        {/* Math-themed background decorations */}
+        {/* Physics-themed background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute -top-2 right-1/4 opacity-20">
-                <TbMathPi className="text-3xl text-blue-500 animate-spin-slow" />
+                <TbAtom className="text-3xl text-blue-500 animate-spin-slow" />
             </div>
             <div className="absolute -bottom-2 left-1/3 opacity-20">
-                <TbMathSymbols className="text-2xl text-yellow-500 animate-pulse" />
+                <TbMagnet className="text-2xl text-yellow-500 animate-pulse" />
             </div>
             <div className="absolute top-1/2 right-1/2 transform -translate-y-1/2 opacity-20">
-                <TbMathFunction className="text-2xl text-red-500 animate-bounce" />
+                <TbBolt className="text-2xl text-red-500 animate-bounce" />
             </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-2 sm:px-4 relative">
-            <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">                    {/* Logo with enhanced math animation */}
+            <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">                    {/* Logo with enhanced physics animation */}
                 <Link href='/' className='shrink-0 group'>
                     <div className="flex items-center gap-2 sm:gap-3">
                         <div className="relative">                                <div className="relative z-10 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12
@@ -242,10 +242,10 @@ const Header = () => {
                         </div>
                         <div className="flex flex-col">
                             <h2 className={styles.teacherName}>
-                                حسام ميرة
+إسراء البيلي
                             </h2>
                             <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-arabicUI2">
-                                مدرس الرياضيات
+                                مدرسة الفيزياء
                             </span>
                         </div>
                     </div>
@@ -352,7 +352,7 @@ const Header = () => {
                                                   hover:scale-100 transition-transform duration-300"></div>
                                 <span className="hidden xs:inline relative z-10">انشاء حساب</span>
                                 <span className="xs:hidden relative z-10">حساب جديد</span>
-                                <PiMathOperationsBold className="text-white text-sm sm:text-xl animate-duration-2000" />
+                                <PiLightningBold className="text-white text-sm sm:text-xl animate-duration-2000" />
                                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-400/50 to-blue-700/50 rounded-lg blur-md 
                                                   opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
                             </button>

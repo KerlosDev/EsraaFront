@@ -31,8 +31,8 @@ const abrilFatface = Abril_Fatface({
 });
 
 export const metadata = {
-  title: "حسام ميرة رياضيات | Hossam Mira Math",
-  description: " شرح وحل تمارين مادة الرياضيات لطلاب الصفوف الثانوية الثلاثة بكل بساطة ",
+  title: " إسراء البيلي فيزياء  | Esraa ElBialy Physics ",
+  description: " شرح وحل تمارين مادة الفيزياء لطلاب الصفوف الثانوية الثلاثة بكل بساطة ",
 };
 
 export default function RootLayout({ children }) {
