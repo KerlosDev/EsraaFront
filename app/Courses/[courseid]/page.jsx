@@ -231,7 +231,7 @@ const CoursePage = () => {
         return (
             <>
                 <Head>
-                    <title>جاري التحميل... -  احمد السيد </title>
+                    <title>جاري التحميل... -  اسراء البيلي  </title>
                 </Head>
                 <div dir='rtl' className="min-h-screen   text-white font-arabicUI3">
                     {/* Animated Background */}
@@ -505,7 +505,7 @@ const CoursePage = () => {
     return (
         <>
             <Head>
-                <title>{courseInfo.nameofcourse ? `${courseInfo.nameofcourse} - منصة احمد السيد    ` : 'منصة احمد السيد  '}</title>
+                <title>{courseInfo.nameofcourse ? `${courseInfo.nameofcourse} - منصة اسراء البيلي   ` : 'منصة اسراء البيلي  '}</title>
                 {/* Add Plyr CSS */}
                 <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
                 {/* Add custom styling for Plyr */}
