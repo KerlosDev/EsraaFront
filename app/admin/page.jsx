@@ -18,6 +18,7 @@ import NotFound from '../not-found';
 import AdminBooks from '../components/AdminBooks';
 import NotificationManagement from './components/NotificationManagement';
 import CoursesAnalyses from './components/CoursesAnalyses';
+import PackageManagement from './components/PackageManagement';
 
 
 export default function MathLMSAdmin() {
@@ -33,7 +34,7 @@ export default function MathLMSAdmin() {
 
     // Admin profile data
     const [adminData, setAdminData] = useState({
-        name: " ادمن",
+        name: "احمد السيد",
         email: "admin@math-lms.com",
         phoneNumber: "0123456789",
         role: "مسؤول النظام",
@@ -220,6 +221,10 @@ export default function MathLMSAdmin() {
 
                         {activeTab === 'analyses' && adminData.userRole === 'admin' && (
                             <CoursesAnalyses />
+                        )}
+
+                        {activeTab === 'packages' && adminData.userRole === 'admin' && (
+                            <PackageManagement />
                         )}
                     </main>
                 </div>

@@ -30,9 +30,9 @@ const Hero = () => {
             </div>
 
             <div className="max-w-7xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center">
-                    {/* Image Section - Moved to top for mobile */}
-                    <div className="relative order-1 lg:order-1 -mt-4 sm:mt-0">
+                <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-start">
+                    {/* Image Section - Moved up for better positioning on laptops */}
+                    <div className="relative order-1 lg:order-1 -mt-4 sm:mt-0 lg:-mt-24">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 via-purple-500/30 to-red-500/30 
                                       rounded-full blur-3xl transform -rotate-6 animate-pulse"></div>                        <div className="relative">
                             <img
@@ -68,7 +68,7 @@ const Hero = () => {
                                             <FaBolt className="text-2xl text-blue-600 animate-spin-slow" />
                                         </div>
                                         <h1 className={styles.teacherName}>
-                                             إسراء البيلي
+                                            إسراء البيلي
                                         </h1>                                        <div className="hidden sm:flex w-12 h-12 bg-gradient-to-br from-yellow-500/30 to-red-500/30 
                                                       rounded-full items-center justify-center group-hover:scale-110 
                                                       transition-transform duration-300">
@@ -94,7 +94,8 @@ const Hero = () => {
                                         <FaTrophy className="text-yellow-500 text-lg animate-spin-slow" />
                                         <span className="text-base sm:text-lg font-arabicUI3 
                                                        text-slate-700 dark:text-slate-300">
-                                            مدرس الفيزياء بخبرة +5 سنوات                                        </span>
+                                            مدرسة الفيزياء لطلاب المرحلة الثانوية
+                                        </span>
                                     </div>
                                 </div>
 

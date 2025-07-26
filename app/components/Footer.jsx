@@ -15,7 +15,7 @@ const Footer = () => {
     const socials = [
         { icon: <FaYoutube size={24} />, href: "https://www.youtube.com/@esraaelbialy21c", label: "YouTube", color: "hover:text-red-500" },
         { icon: <FaFacebook size={24} />, href: "https://www.facebook.com/profile.php?id=61571324732760", label: "Facebook", color: "hover:text-blue-500" },
-        { icon: <FaWhatsapp size={24} />, href: "https://t.me/esraaelbialy3s", label: "Telegram", color: "hover:text-blue-500" },
+        { icon: <FaTelegram size={24} />, href: "https://t.me/esraaelbialy3s", label: "Telegram", color: "hover:text-blue-500" },
      ];
 
     const physicsSymbols = ['⚛️', '⚡', '🌊', '🔬', '💡', '🧲', '🌟', '⚗️', '🔋', '🌈']; return (
