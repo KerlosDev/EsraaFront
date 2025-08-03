@@ -461,15 +461,15 @@ const Courses = () => {
                                 <div className="grid grid-cols-3 gap-2 font-arabicUI3 my-4">
                                     <div className="flex flex-col items-center p-2 bg-blue-500/5 rounded-lg">
                                         <FaAtom className="text-blue-500 mb-1" />
-                                        <span className="text-xs text-slate-600 dark:text-slate-300">ذرات</span>
+                                        <span className="text-xs text-slate-600 dark:text-slate-300">شرح</span>
                                     </div>
                                     <div className="flex flex-col items-center p-2 bg-red-500/5 rounded-lg">
                                         <MdElectricBolt className="text-red-500 mb-1" />
-                                        <span className="text-xs text-slate-600 dark:text-slate-300">كهرباء</span>
+                                        <span className="text-xs text-slate-600 dark:text-slate-300">حل</span>
                                     </div>
                                     <div className="flex flex-col items-center p-2 bg-yellow-500/5 rounded-lg">
                                         <GiWaveStrike className="text-yellow-500 mb-1" />
-                                        <span className="text-xs text-slate-600 dark:text-slate-300">موجات</span>
+                                        <span className="text-xs text-slate-600 dark:text-slate-300">تقييم</span>
                                     </div>
                                 </div>
                                 {/* Course Stats */}
