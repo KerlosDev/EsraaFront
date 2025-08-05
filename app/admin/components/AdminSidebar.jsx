@@ -3,7 +3,9 @@ import { useState } from 'react';
 import {
     User, Book, BarChart2, FileText, Settings as SettingsIcon,
     LogOut, CreditCard, Camera, Users, CheckCircle, AlertTriangle,
-    Bell
+    Bell, Wallet,
+    Clapperboard,
+    BookAIcon
 } from 'lucide-react';
 import { MdOutlineAdminPanelSettings } from 'react-icons/md';
 import { IoAnalyticsOutline } from 'react-icons/io5';
@@ -43,7 +45,7 @@ export default function AdminSidebar({ activeTab, setActiveTab, adminData, showL
         {
             id: 5,
             label: "المدفوعات",
-            icon: <CreditCard size={20} />,
+            icon: <Wallet size={20} />,
             tab: 'payments',
             roles: ['admin'] // Only admin can see payments
         },
@@ -64,21 +66,21 @@ export default function AdminSidebar({ activeTab, setActiveTab, adminData, showL
         {
             id: 8,
             label: " متابعة الطلاب",
-            icon: <CreditCard size={20} />,
+            icon: <User size={20} />,
             tab: 'followup',
             roles: ['admin'] // Only admin can follow up students
         },
         {
             id: 9,
             label: "إدارة العروض",
-            icon: <FileText size={20} />,
+            icon: <Clapperboard size={20} />,
             tab: 'offers',
             roles: ['admin'] // Only admin can manage offers
         },
         {
             id: 10,
             label: "إدارة الكتب",
-            icon: <FileText size={20} />,
+            icon: <Book size={20} />,
             tab: 'books',
             roles: ['admin'] // Only admin can manage books
         },
@@ -88,6 +90,13 @@ export default function AdminSidebar({ activeTab, setActiveTab, adminData, showL
             icon: <Bell size={20} />,
             tab: 'notifications',
             roles: ['admin'] // Only admin can manage notifications
+        },
+        {
+            id: 12,
+            label: "الإعدادات",
+            icon: <SettingsIcon size={20} />,
+            tab: 'settings',
+            roles: ['admin'] // Only admin can access settings
         },
         {
             id: 12,
